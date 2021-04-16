@@ -7,7 +7,7 @@ import {applyMiddleware, createStore} from 'redux';
 import thunk from "redux-thunk";
 
 const initialState = {
-    users: [],
+    todos: [],
     loading: false
 };
 
@@ -21,15 +21,29 @@ const reducer = (state = initialState, action) => {
         case 'load':
             return {
                 ...state,
-                users: action.payload,
+                todos: action.payload,
                 loading: false
             };
+
+        case 'check':
+            return {
+                ...state,
+                todos: state.todos.map((todo) => {
+                    if(todo.id === action.payload) {
+                        return {
+                            ...todo,
+                            completed: !todo.completed
+                        }
+                    }
+                    return todo;
+                })
+            }
+
         case 'delete':
             return {
                 ...state,
-                users: state.users.filter((user) => user.id !== action.payload)
-            }
-
+                todos: state.todos.filter((todo) => todo.id !== action.payload)
+            };
         default: return state;
     }
 };
