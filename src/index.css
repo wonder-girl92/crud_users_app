@@ -1,86 +1,92 @@
 body {
-  margin: 0;
-  }
+    margin: 0;
+}
 
 .main {
-  width: 600px;
-  margin: auto;
-  box-sizing: border-box;
+    width: 600px;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 .App-header {
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 500px;
-  background-image: url("td.jpg");
-  background-size: cover;
-  padding: 150px 0 70px 0;
-  text-align: center;
-  margin: auto;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 500px;
+    background-image: url("components/td.jpg");
+    background-size: cover;
+    padding: 150px 0 70px 0;
+    text-align: center;
+    margin: auto;
 }
 
 .head-text {
-   width: 300px;
-  background-color: white;
-  margin: auto;
-  border-radius: 20px;
-  font-size: xxx-large;
-  text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
-  }
+    width: 300px;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    font-size: xxx-large;
+    text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue;
+}
 
 h1 {
-margin-block-start: 0em;
-margin-block-end:0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 main {
-  border-radius: 30px;
-  box-shadow: 0 20px 70px rgba(6, 180, 29, 0.5);
+    border-radius: 30px;
+    box-shadow: 0 20px 70px rgba(6, 180, 29, 0.5);
 }
 
 .todo {
-  border-radius: 20%;
-  box-shadow: 0 5px 20px 10px rgba(6, 180, 29, 0.1);
-  padding: 15px 40px;
-  font-size: 25px;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: blue;
-  text-shadow: -1px 0 lightgreen, 0 1px lightgreen, 1px 0 lightgreen, 0 -1px lightgreen;
+    border-radius: 20%;
+    box-shadow: 0 5px 20px 10px rgba(6, 180, 29, 0.1);
+    padding: 15px 40px;
+    font-size: 25px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+    text-shadow: -1px 0 lightgreen, 0 1px lightgreen, 1px 0 lightgreen, 0 -1px lightgreen;
 }
 
 .name {
-  flex: 1;
-  margin-left: 15px;
+    flex: 1;
+    margin-left: 15px;
 }
 
 input {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .actions {
-  width: 50px;
+    width: 50px;
 }
 
 button {
-  cursor: pointer;
-  outline: none;
-  color: red;
-  background-color: lightgreen;
-border: none;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-text-align: center;
-align-items: center;
-  padding: 0;
- }
+    cursor: pointer;
+    outline: none;
+    color: red;
+    background-color: #a9f8a9;
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    padding-top: 4px;
+}
+
+button[disabled] {
+    cursor: default;
+    background-color: grey;
+    opacity: 0.6;
+}
 
 img {
-  width: 50px;
-  border-radius: 50%;
+    width: 35px;
+    border-radius: 50%;
 }
